@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ค้นหาถ้วย</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="photo.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div id="game-container">
+        <h1>ค้นหาถ้วย!</h1>
+        <p>คะแนน: <span id="score">0</span></p>
+
+        <div id="box-grid">
+            <div class="box" data-index="0" onclick="checkGuess(0)"></div>
+            <div class="box" data-index="1" onclick="checkGuess(1)"></div>
+            <div class="box" data-index="2" onclick="checkGuess(2)"></div>
+            <div class="box" data-index="3" onclick="checkGuess(3)"></div>
+        </div>
+
+        <p id="message">คลิกที่กล่องเพื่อเริ่มเล่น</p>
+        <button class="start-button" onclick="startGame()">เล่นใหม่</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
